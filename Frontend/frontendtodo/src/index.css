@@ -1,0 +1,290 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  margin: 0;
+}
+
+.inp{
+  background: #FFFFFF;
+  border: 1px solid #D0D0D0;
+  width: 326px;
+  height:48px;
+  padding: 0px 16px 0px 14px;
+  gap: 0px;
+  border-radius: 4px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+
+}
+
+.regName{
+  font-family: Prompt;
+font-size: 36px;
+font-weight: 700;
+color: #42A7C3;
+}
+
+.headingText{
+  color: rgb(73, 110, 137);
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.regLog{
+  font-family: Prompt;
+font-size: 22px;
+font-weight: 500;
+color: #ffffff;
+text-decoration: none;
+}
+
+.HeaderMain{
+  background-color: #D9D9D9;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  /* position:fixed; */
+}
+
+.btns{
+  width: 326px;
+  height: 46px;
+  padding: 12px 24px 12px 24px;
+  gap: 2px;
+  border-radius: 8px ;
+  opacity: 0px;
+  background: #425E6F;
+  color: #FFFFFF;
+  font-family: Prompt;
+font-size: 16px;
+font-weight: 700;
+
+
+}
+
+.loginForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.loginDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  width: 50%;
+
+}
+
+.leftside{
+  width: 50%;
+}
+
+.pendingStyle{
+  background-color: pink;
+  border: 2px solid pink;
+}
+.completedStyle{
+  background-color: rgb(131, 131, 189);
+  border: 2px solid rgb(49, 49, 92);
+}
+
+.todoStyle{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.btnFlex{
+  display: flex;
+  gap: 20px;
+}
+
+.cardFlex{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
+
+.tasksStyle{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url('./assets/lists.jpg');
+  background-repeat: no-repeat;
+  background-size:contain;
+  height: 100vh;
+}
+
+.TasksName{
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.test {
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  padding: 10px 24px;
+  width: fit-content;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.test:hover {
+  border: 2px solid #000000;
+  color: #000000;
+}
+
+.menu{
+  color: #5a656c;
+  text-decoration: none;
+  font-family: Prompt;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.menu:hover{
+  color: #fff;
+}
+
+.btnOut{
+  width: 100px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px ;
+  font-family: Prompt;
+  font-size: 16px;
+  font-weight: 500;
+  background: #5a656c;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.addStyle{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.setForm{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.setPassEyeDiv{
+  display: flex;
+  position: relative;
+}
+.setPassEyeImg{
+  position: absolute;
+  right: 10px;
+  top: 18px;
+  cursor: pointer;
+}
+
+@media screen and (min-width:0px) and (max-width:800px) {
+  .loginForm,.addStyle{
+    flex-direction: column;
+  }
+}
+@media screen and (min-width:0px) and (max-width:600px) {
+  .HeaderMain{
+    flex-direction: column;
+    height: fit-content;
+  }
+  /* .tasksStyle{
+    background-image: none;
+  } */
+}
