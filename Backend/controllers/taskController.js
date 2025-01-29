@@ -12,7 +12,6 @@ exports.getAllTasks = async (req, res) => {
   }
 
 exports.getTaskById =  async (req, res) => {
-    console.log(`Fetching task with ID: ${req.params.id} for user ${req.user._id}`);
   
     try {
       const task = await Task.findOne({ _id: req.params.id, userId: req.user._id });

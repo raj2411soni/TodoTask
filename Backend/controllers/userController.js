@@ -7,9 +7,7 @@ require('dotenv').config();
 exports.signupUser =  async (req, res) => {
   try {
     const { username, password } = req.body;
-    console.log(password)
-    console.log(password)
-    console.log(password)
+    
     if (password.length < 8) {
         return res.status(400).send('Password must be at least 8 characters long');
     }
@@ -26,9 +24,7 @@ exports.signupUser =  async (req, res) => {
 exports.login = async (req, res) => {
     try {
       let { username, password } = req.body;
-      console.log("use11111111111",username)
       username = username.trim()
-      console.log("use",username)
       const user = await User.findOne({ username });
       if (!user) return res.status(404).send('User not found');
   
